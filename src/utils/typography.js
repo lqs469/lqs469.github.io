@@ -2,7 +2,7 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 import "./global.css"
 
-Wordpress2016.baseFontSize = 14
+Wordpress2016.baseFontSize = 15
 Wordpress2016.headerWeight = 700
 Wordpress2016.boldWeight = 400
 Wordpress2016.bodyWeight = 100
