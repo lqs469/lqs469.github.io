@@ -2,6 +2,10 @@ import React from "react"
 
 export default class HTML extends React.Component {
   render() {
+    const theme = new Date().getHours() >= 17 ? 'dark' : 'light';
+
+    console.log(new Date().getHours(), theme);
+
     return (
       <html {...this.props.htmlAttributes}>
         <head>
@@ -13,7 +17,7 @@ export default class HTML extends React.Component {
           />
           {this.props.headComponents}
         </head>
-        <body {...this.props.bodyAttributes}>
+        <body {...this.props.bodyAttributes} className={ theme }>
           {this.props.preBodyComponents}
           <div
             key={`body`}
