@@ -2,14 +2,24 @@ import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 import "./global.css"
 
-Wordpress2016.baseFontSize = '14px'
-Wordpress2016.headerWeight = 600
-Wordpress2016.boldWeight = 500
-Wordpress2016.bodyWeight = 400
-Wordpress2016.bodyFontFamily = Wordpress2016.headerFontFamily = ['-apple-system', 'BlinkMacSystemFont', 'Helvetica Neue', 'PingFang SC', 'Microsoft YaHei', 'Source Han Sans SC', 'serif'];
+const fontFamily = [
+  "-apple-system",
+  "BlinkMacSystemFont",
+  "Helvetica Neue",
+  "PingFang SC",
+  "Microsoft YaHei",
+  "Source Han Sans SC",
+  "serif",
+]
+
+Wordpress2016.headerFontFamily = fontFamily
+Wordpress2016.bodyFontFamily = fontFamily
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    h1: {
+      fontFamily: fontFamily.join(","),
+    },
     "a.gatsby-resp-image-link": {
       boxShadow: `none`,
     },

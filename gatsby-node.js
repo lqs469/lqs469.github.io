@@ -9,7 +9,6 @@ exports.createPages = ({ graphql, actions }) => {
     `
       {
         allMarkdownRemark(
-          filter: { fields: { slug: { regex: "/^(?!/_)\\\\.*/" } } }
           sort: { fields: [frontmatter___date], order: DESC }
           limit: 1000
         ) {

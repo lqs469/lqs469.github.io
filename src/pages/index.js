@@ -4,7 +4,7 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
+import Project from "../components/project"
 
 class BlogIndex extends React.Component {
   render() {
@@ -16,13 +16,14 @@ class BlogIndex extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" keywords={[`lqs469`, `blog`]} />
         <Bio />
+        <h2>Post</h2>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug
           return (
             <div key={node.fields.slug}>
               <h3
                 style={{
-                  marginBottom: rhythm(1 / 4),
+                  marginBottom: 0,
                 }}
               >
                 <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
@@ -31,11 +32,7 @@ class BlogIndex extends React.Component {
               </h3>
               <small>{node.frontmatter.date}</small>
               <small>
-                {"‧"}
-                {node.frontmatter.categories}
-              </small>
-              <small>
-                {"‧"}
+                {" ‧ "}
                 {node.timeToRead} '
               </small>
               <p
@@ -46,6 +43,8 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
+        <h2>Project</h2>
+        <Project />
       </Layout>
     )
   }
@@ -61,12 +60,12 @@ export const pageQuery = graphql`
       }
     }
     allMarkdownRemark(
-      filter: { fields: { slug: { regex: "/^(?!/_)\\\\.*/" } } }
-      sort: { fields: [frontmatter___date], order: DESC }
+      sort: { order: DESC, fields: [frontmatter___date] }
+      filter: { frontmatter: { categories: { regex: "/.*路/" } } }
     ) {
       edges {
         node {
-          excerpt
+          excerpt(pruneLength: 100)
           fields {
             slug
           }

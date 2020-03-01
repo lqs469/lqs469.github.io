@@ -1,7 +1,10 @@
 ---
-title: 订餐的烦恼
+title: 美餐机器人
+index: 4
 date: 2017-11-22 16:34:10
-categories: 弱鸡之路
+categories: stuff
+description: <<订餐的烦恼>>
+link: //github.com/lqs469/meicanRobot
 ---
 
 在开始今天的”故事“前，先跟大家特别是据说在西溪园区有四五个食堂的幸福人群来科普一下：

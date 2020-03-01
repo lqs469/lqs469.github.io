@@ -10,8 +10,10 @@ h2,
 h3,
 h4,
 p,
-small {
-  /* color: #393e46; */
+li,
+small,
+span {
+  color: #393e46;
   color: var(--textNormal);
 }
 

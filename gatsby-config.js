@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `lqs469`,
-    author: `lqs469`,
+    author: `Qinshuo(Allen) Li`,
     description: `lqs469 Blog`,
     siteUrl: `https://lqs469.github.io`,
     social: {
@@ -18,6 +18,13 @@ module.exports = {
       options: {
         path: `${__dirname}/content/blog`,
         name: `blog`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/content/stuff`,
+        name: `stuff`,
       },
     },
     {

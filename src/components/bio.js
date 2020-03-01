@@ -38,42 +38,46 @@ function Bio() {
               }}
             />
             <p>
-              Made by <strong>{author}</strong> who makes stuff.
-              <br /> Find me on{" "}
+              {author}
+              <br />
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://twitter.com/${social.twitter}`}
               >
                 Twitter
-              </a>{" "}
+              </a>
+              {" • "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://github.com/${social.github}`}
               >
                 Github
-              </a>{" "}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://www.zhihu.com/people/${social.zhihu}`}
-              >
-                Zhihu
-              </a>{" "}
+              </a>
+              {" • "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://instagram.com/${social.ins}`}
               >
-                Instagram
-              </a>{" "}
+                Ins
+              </a>
+              {" • "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://weibo.com/${social.weibo}`}
               >
                 Weibo
+              </a>
+              {" • "}
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href={`https://www.zhihu.com/people/${social.zhihu}`}
+              >
+                Zhihu
               </a>
             </p>
           </div>
