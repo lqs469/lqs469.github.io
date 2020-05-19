@@ -1,12 +1,5 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql, Link } from "gatsby"
 import Image from "gatsby-image"
 
 import { rhythm } from "../utils/typography"
@@ -16,12 +9,13 @@ function Bio() {
     <StaticQuery
       query={bioQuery}
       render={data => {
-        const { author, social } = data.site.siteMetadata
+        const { author } = data.site.siteMetadata
         return (
           <div
             style={{
               display: `flex`,
-              marginBottom: rhythm(2.5),
+              alignItems: `center`,
+              marginBottom: rhythm(3),
             }}
           >
             <Image
@@ -31,55 +25,16 @@ function Bio() {
                 marginRight: rhythm(1 / 2),
                 marginBottom: 0,
                 minWidth: 50,
-                borderRadius: `100%`,
               }}
-              imgStyle={{
-                borderRadius: `50%`,
-              }}
+              imgStyle={{}}
             />
-            <p>
-              {author}
+            <span>
+              <Link style={{ boxShadow: `none` }} to={`/about`}>
+                {author}
+              </Link>
               <br />
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://twitter.com/${social.twitter}`}
-              >
-                Twitter
-              </a>
-              {" • "}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://github.com/${social.github}`}
-              >
-                Github
-              </a>
-              {" • "}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://instagram.com/${social.ins}`}
-              >
-                Ins
-              </a>
-              {" • "}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://weibo.com/${social.weibo}`}
-              >
-                Weibo
-              </a>
-              {" • "}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={`https://www.zhihu.com/people/${social.zhihu}`}
-              >
-                Zhihu
-              </a>
-            </p>
+              Empty Stack Engineer.
+            </span>
           </div>
         )
       }}

@@ -1,7 +1,6 @@
 import React from "react"
 import { StaticQuery, Link, graphql } from "gatsby"
-
-// import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography"
 
 function Project() {
   return (
@@ -10,7 +9,6 @@ function Project() {
       render={data => {
         const projects = data.allMarkdownRemark.edges
         const TitleStyle = {
-          // fontSize: rhythm(0.75),
           fontWeight: "bold",
           boxShadow: `none`,
         }
@@ -21,12 +19,13 @@ function Project() {
               const title = node.frontmatter.title || node.fields.slug
 
               return (
-                <div key={node.fields.slug}>
-                  <span
-                    style={{
-                      marginBottom: 0,
-                    }}
-                  >
+                <div
+                  key={node.fields.slug}
+                  style={{
+                    marginBottom: rhythm(1),
+                  }}
+                >
+                  <span>
                     {node.frontmatter.link ? (
                       <a
                         style={TitleStyle}
@@ -41,7 +40,8 @@ function Project() {
                         {title}
                       </Link>
                     )}
-                  </span>{" "}
+                  </span>
+                  <br />
                   <span
                     dangerouslySetInnerHTML={{
                       __html: node.frontmatter.description,

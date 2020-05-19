@@ -3,10 +3,8 @@ import Wordpress2016 from "typography-theme-wordpress-2016"
 import "./global.css"
 
 const fontFamily = [
-  "-apple-system",
-  "BlinkMacSystemFont",
-  "Helvetica Neue",
   "PingFang SC",
+  "Helvetica Neue",
   "Microsoft YaHei",
   "Source Han Sans SC",
   "serif",
