@@ -1,5 +1,5 @@
 ---
-title: Gitlab API 指北
+title: Gitlab API不完全指北
 date: 2019-08-20 4:51:01
 categories: 咸鱼之路
 ---
