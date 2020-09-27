@@ -49,8 +49,7 @@
     "url": "git+https://github.com/lqs469/lqs469.github.io.git"
   },
   "scripts": {
-    "whoami": "git config --add user.email 'liqinshuo469@gmail.com' && git config --add user.name 'lqs469' && git remote add origin https://github.com/lqs469/lqs469.github.io.git",
-    "netlify": "gatsby build && whoami && gh-pages -d public -b master",
+    "netlify": "gatsby build && gh-pages -d public -r https://github.com/lqs469/lqs469.github.io.git -u 'lqs469 <liqinshuo469@gmail.com>' -b master",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
     "develop": "gatsby develop",
