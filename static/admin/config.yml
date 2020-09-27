@@ -24,10 +24,10 @@ collections:
     public_folder: ""
     path: "{{title}}/index"
     editor:
-      preview: false
+      preview: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
+      # - { label: "Description", name: "description", widget: "string" }
       - { label: "Categories", name: "categories", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }
