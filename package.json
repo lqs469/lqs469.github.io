@@ -49,7 +49,7 @@
     "url": "git+https://github.com/lqs469/lqs469.github.io.git"
   },
   "scripts": {
-    "netlify": "gatsby build && gh-pages -d public -r https://github.com/lqs469/lqs469.github.io.git -u 'lqs469 <liqinshuo469@gmail.com>' -b master",
+    "netlify": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "build": "gatsby build",
     "develop": "gatsby develop",
