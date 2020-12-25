@@ -1,8 +1,8 @@
 name: gh-pages publisher 🚀
 
 on:
-push:
-  branches: [ source ]
+  push:
+    branches: [ source ]
 
 jobs:
 publish-gh-pages:
