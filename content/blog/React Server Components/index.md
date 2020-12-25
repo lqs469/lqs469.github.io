@@ -1,5 +1,5 @@
 ---
-title: React Server Components
+title: React Server Components, Better SPA powered by backend
 date: 2020-12-25 11:30:10
 ---
 
@@ -75,4 +75,4 @@ In my opinion, If RSC production-ready, we can use it as a normal way to develop
 
 ## For now
 
-React Server Components are still in **research** and **development**. But this concept is pertty inspired, we can develop at server side, reduce the SPA's white screen time, lighten bundle size and we have a new approach to improve user experience.
+React Server Components are still in **research** and **development**. But this concept is pretty inspired, we can develop at server side, reduce the SPA's white screen time, lighten bundle size and we have a new approach to improve user experience.
