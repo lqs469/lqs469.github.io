@@ -18,7 +18,8 @@ jobs:
         run: npm ci
       
       - name: Build
-        run: git config user.name "<user name>" && git config user.email "user email"
-        run: npm run deploy
+        run: |
+          git config user.name "<user name>" && git config user.email "user email"
+          npm run deploy
         env:
           GH_TOKEN: ${{secrets.GH_PAGE_SECRET}}
