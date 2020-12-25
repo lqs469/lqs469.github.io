@@ -3,7 +3,7 @@ module.exports = {
     title: `lqs469`,
     author: `Qinshuo(Allen) Li`,
     description: `lqs469 Blog`,
-    siteUrl: `https://lqs469.github.io`,
+    siteUrl: `https://lqs469.com`,
     social: {
       twitter: `liqinshuo`,
       github: `lqs469`,

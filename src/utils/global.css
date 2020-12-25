@@ -198,3 +198,8 @@ pre[data-line] {
   float: left;
   min-width: 100%;
 }
+
+blockquote {
+  font-size: 14px;
+  line-height: 1.5;
+}

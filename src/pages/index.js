@@ -59,11 +59,20 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { categories: { regex: "/.*路/" } } }
+      filter: {
+        frontmatter: {
+          hide: {
+            ne: 1
+          }
+          categories: {
+            ne: "stuff"
+          }
+        }
+      }
     ) {
       edges {
         node {
-          excerpt(pruneLength: 100)
+          excerpt(pruneLength: 130)
           fields {
             slug
           }

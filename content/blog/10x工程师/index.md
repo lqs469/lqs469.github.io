@@ -2,6 +2,7 @@
 title: 10x工程师
 date: 2019-07-14 0:36:41
 categories: 且说且话
+hide: 1
 ---
 硅谷里提到了一个很有趣的概念， 叫做“10x工程师”。Big Head 形容 Richard 的时候说到：
 > “Richard is a 10xer. I’m barely a 1xer.”

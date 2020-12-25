@@ -5,6 +5,7 @@ import "./global.css"
 const fontFamily = [
   "PingFang SC",
   "Helvetica Neue",
+  "Caliri",
   "Microsoft YaHei",
   "Source Han Sans SC",
   "serif",
@@ -15,6 +16,10 @@ Wordpress2016.bodyFontFamily = fontFamily
 
 Wordpress2016.overrideThemeStyles = () => {
   return {
+    body: {
+      fontSize: "14px",
+      lineHeight: 1.5
+    },
     h1: {
       fontFamily: fontFamily.join(","),
     },
