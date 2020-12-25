@@ -15,11 +15,11 @@ jobs:
           node-version: 12
 
       - name: Install deps
-        run: npm ci
+        run: npm i
       
       - name: Build
         run: |
-          git config user.name "<user name>" && git config user.email "user email"
+          git config user.name "lqs469" && git config user.email "liqinshuo469@gmail.com"
           npm run deploy
         env:
           GH_TOKEN: ${{secrets.GH_PAGE_SECRET}}

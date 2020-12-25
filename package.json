@@ -50,7 +50,7 @@
   },
   "scripts": {
     "netlify": "gatsby build",
-    "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/lqs469/lqs469.github.io.git",
+    "deploy": "gatsby build && gh-pages -d public -b master -r https://$GH_TOKEN@github.com/lqs469/lqs469.github.io.git",
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --write src/**/*.{js,jsx}",
