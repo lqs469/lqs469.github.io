@@ -68,7 +68,7 @@ function Link({ noMargin }) {
                 rel="noopener noreferrer"
                 href="mailto:liqinshuo469@gmail.com"
               >
-                email
+                Email
               </a>
             </p>
           </div>

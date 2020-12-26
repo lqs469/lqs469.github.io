@@ -5,7 +5,7 @@ module.exports = {
     description: `lqs469 Blog`,
     siteUrl: `https://lqs469.com`,
     social: {
-      twitter: `liqinshuo`,
+      twitter: `lqs469`,
       github: `lqs469`,
       weibo: `lqs469`,
       ins: `lqs469`,
