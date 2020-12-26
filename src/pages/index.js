@@ -4,7 +4,6 @@ import { Link, graphql } from "gatsby"
 import Bio from "../components/bio"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import LINK from "../components/link"
 
 class BlogIndex extends React.Component {
   render() {
@@ -42,7 +41,6 @@ class BlogIndex extends React.Component {
             </div>
           )
         })}
-        <LINK />
       </Layout>
     )
   }

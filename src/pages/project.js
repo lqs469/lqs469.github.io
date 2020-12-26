@@ -12,13 +12,13 @@ export default props => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="About me" keywords={[`lqs469`, `blog`, `all project`]} />
+      <Bio />
 
       <h2>Projects</h2>
       <div style={{ marginBottom: rhythm(4) }}>
         <Project />
       </div>
 
-      <Bio />
     </Layout>
   )
 }

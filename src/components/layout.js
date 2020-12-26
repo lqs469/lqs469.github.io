@@ -72,13 +72,18 @@ const Layout = props => {
         {title}
       </Link>
 
-      <Link style={linkStyle} to="/post" activeStyle={activeStyle}>
+      {/* <Link style={linkStyle} to="/post" activeStyle={activeStyle}>
         Posts
-      </Link>
+      </Link> */}
 
       <Link style={linkStyle} to="/project" activeStyle={activeStyle}>
         Projects
       </Link>
+
+      <Link style={linkStyle} to="/about" activeStyle={activeStyle}>
+        About
+      </Link>
+
       <span onClick={toggleTheme} style={{ cursor: "pointer", float: "right" }}>
         {theme === "light" ? "🌙" : "🌞"}
       </span>

@@ -13,6 +13,7 @@ export default props => {
   return (
     <Layout location={props.location} title={siteTitle}>
       <SEO title="About me" keywords={[`lqs469`, `blog`, `all post`]} />
+      <Bio />
 
       <h2>Posts</h2>
       <div style={{ marginBottom: rhythm(4) }}>
@@ -43,7 +44,6 @@ export default props => {
           )
         })}
       </div>
-      <Bio />
     </Layout>
   )
 }
@@ -57,7 +57,16 @@ export const pageQuery = graphql`
     }
     allMarkdownRemark(
       sort: { order: DESC, fields: [frontmatter___date] }
-      filter: { frontmatter: { categories: { regex: "/.*路/" } } }
+      filter: {
+        frontmatter: {
+          hide: {
+            ne: 1
+          }
+          categories: {
+            ne: "stuff"
+          }
+        }
+      }
     ) {
       edges {
         node {
