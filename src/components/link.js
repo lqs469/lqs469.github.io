@@ -32,14 +32,14 @@ function Link({ noMargin }) {
               >
                 Github
               </a>
-              {"  "}
+              {/* {"  "}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href={`https://instagram.com/${social.ins}`}
               >
                 Ins
-              </a>
+              </a> */}
               {"  "}
               <a
                 target="_blank"
@@ -56,19 +56,19 @@ function Link({ noMargin }) {
               >
                 Zhihu
               </a>{" "}
-              <a
+              {/* <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="https://www.linkedin.com/in/liqinshuo"
               >
                 Linkedin
-              </a>{" "}
+              </a>{" "} */}
               <a
                 target="_blank"
                 rel="noopener noreferrer"
                 href="mailto:liqinshuo469@gmail.com"
               >
-                Contact
+                email
               </a>
             </p>
           </div>
