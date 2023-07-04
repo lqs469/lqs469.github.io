@@ -33,3 +33,6 @@ jobs:
         with:
           branch: gh-pages
           folder: out
+          clean-exclude: |
+            CNAME
+            .nojekyll
