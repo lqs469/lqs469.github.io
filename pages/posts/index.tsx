@@ -33,7 +33,7 @@ export default function Post({ posts }: Props) {
           <section className="">
             {posts.map((post) => (
               <div
-                className="py-1 flex items-center justify-between"
+                className="py-1 flex justify-between"
                 key={post.slug}
               >
                 <a
@@ -42,7 +42,7 @@ export default function Post({ posts }: Props) {
                 >
                   {post.title}
                 </a>
-                <span className="opacity-50 text-sm">
+                <span className="opacity-50 text-sm text-right">
                   {post.date.slice(0, 4)}/{post.date.slice(5, 7)}
                 </span>
               </div>
