@@ -3,12 +3,20 @@
 @tailwind utilities;
 
 :root {
+  --color-highlight: #000;
+  --color: #444;
   --color-code: #eee;
   --color-code-text: #333;
+  font-size: 14px;
 }
 
 body {
   font-family: Helvetica, sans-serif;
+  color: var(--color);
+}
+
+h1 {
+  color: var(--color-highlight);
 }
 
 a {

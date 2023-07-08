@@ -1,0 +1,23 @@
+.intro {
+  --bg-size: 200px;
+  --bg-color: #ec4899;
+  --bg-light-color: #fde047;
+  --x: 0;
+  --y: 0;
+  cursor: default;
+}
+
+.intro b {
+  display: inline-block;
+  background-image: radial-gradient(
+    circle at calc(var(--x) - var(--position-x))
+      calc(var(--y) - var(--position-y)),
+    var(--bg-light-color) 0%,
+    var(--bg-color) 100%
+  );
+  background-color: var(--bg-color);
+  /* background-position: var(--bg-x) var(--bg-y); */
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
