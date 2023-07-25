@@ -10,7 +10,7 @@ const social = {
 
 const Footer = () => {
   return (
-    <footer className="border-t">
+    <footer className="border-t font-[MHTIROGLA] text-lg">
       <div className="py-20">
         <a
           target="_blank"

@@ -41,8 +41,8 @@ const Intro = () => {
         styles.intro
       )}
     >
-      <h1 className="text-5xl md:text-8xl font-bold tracking-tighter leading-tight md:pr-8">
-        <b>lqs469.</b>
+      <h1 className="text-7xl md:text-[10em] font-[MHTIROGLA]">
+        <b>Lqs469.</b>
       </h1>
       <Nav />
       <h4 className=" mt-5">
